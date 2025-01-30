@@ -1,0 +1,386 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(assets/starfall-night-sky-mountains-aesthetic-gif-preview-desktop-wallpaper.gif);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+nav {
+  font-family: "Roboto Slab", serif;
+}
+
+.navbar__left > a {
+  transition: all 0.3s ease;
+  font-weight: 700;
+}
+.navbar__left > a:hover {
+  transform: scale(1.02);
+}
+.navbar__left > a:active {
+  transform: scale(0.9);
+}
+
+.navbar__right > .navbar__end > a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+  font-size: 18px;
+}
+.navbar__right > .navbar__end > a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #ffd700;
+  transition: width 0.3s ease;
+}
+
+.navbar__right > .navbar__end > a:hover {
+  color: #ffd700 !important;
+}
+
+.navbar__right > .navbar__end > a:hover::after {
+  width: 100%; /* Expand the underline */
+}
+
+section {
+  font-family: "Poppins", serif;
+}
+.about__section > p:nth-child(1) {
+  font-size: 60px;
+  font-weight: 600;
+}
+.about__section > p:nth-child(2) {
+  font-size: 24px;
+}
+.about__section > p:nth-child(3) {
+  font-size: 18px;
+}
+.button {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffd700;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.button:hover {
+  background-color: #ffcc00;
+  scale: 1.02;
+}
+.button:active {
+  scale: 0.9;
+}
+
+.about__bottom > p {
+  font-size: 60px;
+  font-weight: 600;
+}
+.card__btm .card__detail img {
+  width: 100%; /* Make the image span the full width of its container */
+  height: 140px; /* Set a consistent height */
+  object-fit: contain; /* Maintain the aspect ratio while filling the space */
+}
+.card__btm .card__detail .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scaling and glowing */
+  border-radius: 10px; /* Optional: rounded corners for the whole card */
+}
+
+.card__btm .card__detail .card:hover {
+  transform: scale(1.05); /* Slightly enlarge the entire card */
+  box-shadow: 0 8px 20px rgba(255, 215, 0, 0.5); /* Glowing effect (golden color) */
+}
+
+.detail__me {
+  width: 100% !important;
+  height: auto !important;
+  margin-top: 25px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(255, 215, 0, 0.5),
+    0 -8px 20px rgba(255, 215, 0, 0.5); /* Shadow on both top and bottom */
+  padding: 50px;
+  font-size: 20px;
+  margin-bottom: 25px;
+  transition: box-shadow 0.3s ease; /* Smooth transition for box-shadow */
+}
+
+.detail__me:hover {
+  box-shadow: 0 8px 20px rgba(255, 215, 0, 0.7),
+    0 -8px 20px rgba(255, 215, 0, 0.7); /* Increase the opacity for a stronger glow on both top and bottom */
+}
+
+.about__me__section {
+  border: 1px solid #ffd700;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+.skills__section {
+  border: 1px solid #ffd700;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+.aboutme__block {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.header__skill {
+  font-size: 32px;
+  font-family: "Roboto Mono", serif;
+  font-weight: 600;
+}
+.header__detail {
+  font-size: 18px;
+}
+
+.custom-progress-bar {
+  height: 40px !important; /* Adjust the height as needed */
+}
+
+.skillweb {
+  font-size: 18px;
+  font-family: "Roboto Mono", serif;
+  font-weight: 600;
+}
+
+.hover__progress {
+  transition: all 0.3s linear !important; /* Smooth transition on hover */
+}
+
+.hover__progress:hover {
+  background-color: #9c59f6 !important; /* Change to a different color on hover */
+}
+.project__title {
+  font-size: 30px;
+  font-family: "Roboto Mono", serif;
+  font-weight: 600;
+}
+.project__detail {
+  font-size: 18px;
+  font-family: "Roboto Mono", serif;
+  font-weight: 600;
+}
+.project__btn {
+  transition: all 0.3s ease !important;
+}
+.project__btn:active {
+  transform: scale(0.9) !important;
+}
+
+.project__card {
+  transition: transform 0.1s ease, box-shadow 0.1s ease; /* Faster transition */
+  border-radius: 10px; /* Optional: rounded corners for the whole card */
+  perspective: 1000px; /* Add perspective for 3D effect */
+}
+
+.project__card:hover {
+  transform: rotateY(var(--rotateY)) rotateX(var(--rotateX)); /* More pronounced 3D effect without scaling */
+  box-shadow: 0 8px 20px rgba(255, 215, 0, 0.7); /* Stronger glowing effect */
+}
+
+.project__card {
+  --rotateX: 0deg;
+  --rotateY: 0deg;
+  transition: transform 0.1s ease, box-shadow 0.1s ease; /* Faster transition */
+  border-radius: 10px; /* Optional: rounded corners for the whole card */
+  perspective: 1000px; /* Add perspective for 3D effect */
+  transition: all 0.3s ease;
+}
+
+.project__card:hover {
+  transform: rotateY(var(--rotateY)) rotateX(var(--rotateX)); /* More pronounced 3D effect without scaling */
+  box-shadow: 0 8px 20px rgba(255, 215, 0, 0.7); /* Stronger glowing effect */
+  scale: 1.02;
+
+}
+.contact__header {
+  font-size: 28px;
+  font-family: "Roboto Mono", serif;
+  font-weight: 600;
+}
+.contact__detail {
+  font-size: 18px;
+  font-family: "Roboto Mono", serif;
+  font-weight: 600;
+}
+
+.link__contact {
+  font-size: 18px;
+  font-family: "Roboto Mono", serif;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffd700;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.row__contact {
+  transition: all 0.3s ease;
+}
+.row__contact:hover {
+  transform: scale(1.05);
+  background-color: #f0f0f0;
+}
+.container > .form {
+  padding: 30px 40px;
+  margin-bottom: 20px; /* Creates a gap between forms */
+}
+
+.container > .form > .form-control {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.container > .form > .form-control > label {
+  margin-bottom: 5px;
+}
+
+.container > .form > .form-control > input,
+.container > .form > .form-control > textarea {
+  border: 2px solid #d6dbdf;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.container > .form > .form-control > input:focus,
+.container > .form > .form-control > textarea:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.container > .form > .form-control.success > input,
+.container > .form > .form-control.success > textarea {
+  border-color: #2ecc71;
+}
+
+.container > .form > .form-control.error > input,
+.container > .form > .form-control.error > textarea {
+  border-color: #e74c3c;
+}
+
+.container > .form > .form-control > i {
+  position: absolute;
+  top: 35px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.container > .form > .form-control.error > i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.container > .form > .form-control.success > i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.container > .form > .form-control > small {
+  color: #e74c3c;
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  visibility: hidden;
+}
+
+.container > .form > .form-control.error > small {
+  visibility: visible;
+}
+
+.container > .form > .button {
+  background-color: #5dade2;
+  border: 2px solid #5dade2;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.btn__icon {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffd700;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.btn__icon:hover {
+  background-color: #ffcc00;
+  scale: 1.02;
+}
+.btn__icon > a {
+  text-decoration: none;
+  color: #000;
+}
+.footer__name {
+  font-size: 32px;
+  font-family: "Roboto Mono", serif;
+  font-weight: 600;
+}
+.footer__copy {
+  font-size: 18px;
+  font-family: "Roboto Mono", serif;
+  font-weight: 600;
+}
+/* Transparent Blur Background */
+.bg-transparent-blur {
+  background: rgba(255, 255, 255, 0.2); /* Transparent white */
+  backdrop-filter: blur(10px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border-radius: 10px; /* Smooth edges */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content */
+  height: 100%; /* Ensure it stretches to full height */
+}
+
