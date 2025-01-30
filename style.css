@@ -404,6 +404,12 @@ section {
   .about__section > p:nth-child(3) {
     font-size: 14px; /* Smaller font size for mobile view */
   }
+  .about-h {
+    font-size: 20px; /* Smaller font size for mobile view */
+  }
+  .about-p {
+    font-size: 14px; /* Smaller font size for mobile view */
+  }
   .header__skill {
     font-size: 24px; /* Smaller font size for mobile view */
   }
