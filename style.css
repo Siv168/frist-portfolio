@@ -386,11 +386,47 @@ section {
 }
 
 @media (max-width: 768px) {
+  .big{
+    font-size: 42px !important;
+  }
   .project__title {
     font-size: 24px; /* Smaller font size for mobile view */
   }
   .project__detail {
     font-size: 16px; /* Smaller font size for mobile view */
+  }
+  .about__section > p:nth-child(1) {
+    font-size: 40px; /* Smaller font size for mobile view */
+  }
+  .about__section > p:nth-child(2) {
+    font-size: 18px; /* Smaller font size for mobile view */
+  }
+  .about__section > p:nth-child(3) {
+    font-size: 14px; /* Smaller font size for mobile view */
+  }
+  .header__skill {
+    font-size: 24px; /* Smaller font size for mobile view */
+  }
+  .header__detail {
+    font-size: 14px; /* Smaller font size for mobile view */
+  }
+  .skillweb {
+    font-size: 14px; /* Smaller font size for mobile view */
+  }
+  .contact__header {
+    font-size: 20px; /* Smaller font size for mobile view */
+  }
+  .contact__detail {
+    font-size: 14px; /* Smaller font size for mobile view */
+  }
+  .link__contact {
+    font-size: 14px; /* Smaller font size for mobile view */
+  }
+  .footer__name {
+    font-size: 24px; /* Smaller font size for mobile view */
+  }
+  .footer__copy {
+    font-size: 14px; /* Smaller font size for mobile view */
   }
 }
 
