@@ -11,6 +11,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  overflow-x: hidden; /* Hide horizontal overflow */
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -382,5 +383,14 @@ section {
   flex-direction: column;
   justify-content: center; /* Center content */
   height: 100%; /* Ensure it stretches to full height */
+}
+
+@media (max-width: 768px) {
+  .project__title {
+    font-size: 24px; /* Smaller font size for mobile view */
+  }
+  .project__detail {
+    font-size: 16px; /* Smaller font size for mobile view */
+  }
 }
 
